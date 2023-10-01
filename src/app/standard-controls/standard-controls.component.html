@@ -217,10 +217,12 @@
             <mat-card-content>
 
                 <div class="form-row">
+                    <label>Zwykły przycisk</label>
                     <button>Przycisk</button>
                 </div>
 
                 <div class="form-row">
+                    <label>Przycisk wyłączony</label>
                     <button disabled>Przycisk wyłączony</button>
                 </div>
 
@@ -239,9 +241,9 @@
 
 
                 <form>
-                    <input type="button" value="Start machine" accesskey="s" onclick="changeValue()" />
+                    <input type="button" value="Start machine" accesskey="s" (click)="foo('zwykły 2')" />
                 </form>
-                <p>The machine is .</p>
+                <p>Przycisk: "{{myLabel}}" został kliknięty!</p>
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>
