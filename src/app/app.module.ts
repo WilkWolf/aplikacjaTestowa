@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StandardControlsComponent } from './standard-controls/standard-controls.component';
-import { ControlsDisabledComponent } from './controls-disabled/controls-disabled.component';
 import { DuplicatedControlsComponent } from './duplicated-controls/duplicated-controls.component';
 import { ControlsWithDynamicIDComponent } from './controls-with-dynamic-id/controls-with-dynamic-id.component';
 import { RouterModule } from '@angular/router';
@@ -15,7 +14,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     StandardControlsComponent,
-    ControlsDisabledComponent,
     DuplicatedControlsComponent,
     ControlsWithDynamicIDComponent
   ],
@@ -24,10 +22,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
-      { path: 'controlsDisabled', component: ControlsDisabledComponent },
       { path: 'standardControls', component: StandardControlsComponent },
       { path: 'duplicatedControls', component: DuplicatedControlsComponent },
       { path: 'controlsWIthDynamicID', component: ControlsWithDynamicIDComponent },
+      { path: '', redirectTo: 'standardControls', pathMatch: 'full' },
+      { path: '**', redirectTo: 'standardControls', pathMatch: 'full' },
     ]),
     MaterialModule,
   ],
