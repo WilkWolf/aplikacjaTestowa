@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'app-controls-with-dynamic-id',
-  templateUrl: './controls-with-dynamic-id.component.html',
-  styleUrls: ['./controls-with-dynamic-id.component.css']
+  selector: 'app-controls-various-controls-identification',
+  templateUrl: './various-controls-identification.component.html',
+  styleUrls: ['./various-controls-identification.component.css']
 })
-export class ControlsWithDynamicIDComponent {
+export class VariousControlsIdentificationComponent {
   public zmienneID: number = 0;
 
   constructor() {
