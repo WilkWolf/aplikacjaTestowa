@@ -1,0 +1,33 @@
+@import "../../styles.css";
+
+mat-card{
+    width: 75%;
+    /* height: fit-content; */
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  .form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+  .form-row > input {
+    flex: 2;
+  }
+
+
+mat-grid-list{
+    padding-bottom: 0% !important;
+}
+
+mat-grid-tile{
+    padding-top: 40% !important;
+}
+
+.imageButton{
+height: 50px;
+width: 50px;
+}
