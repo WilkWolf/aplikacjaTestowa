@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class StandardControlsComponent {
 
-
-  public myLabel: string = "";
-
-
   ngOnInit() {
-    this.myLabel = '';
+    this.label = '';
   }
-  foo(text: string) {
-    this.myLabel = text;
+
+  public label: string = "";
+
+
+  public changeValue(value: string) {
+    this.label = value;
   }
 }

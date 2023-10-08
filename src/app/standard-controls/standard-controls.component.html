@@ -218,32 +218,33 @@
 
                 <div class="form-row">
                     <label>Zwykły przycisk</label>
-                    <button>Przycisk</button>
+                    <button (click)="changeValue('zwykły 1')">Przycisk</button>
                 </div>
 
                 <div class="form-row">
                     <label>Przycisk wyłączony</label>
-                    <button disabled>Przycisk wyłączony</button>
+                    <button disabled (click)="changeValue('zwykły wyłączony przycisk 1')">Przycisk wyłączony</button>
                 </div>
 
                 <div class="form-row">
                     <label>Przycisk z grafika</label>
                     <button>
-                        <img src="../../assets/test.png" alt="buttonpng" height="40px" width="40px" />
+                        <img src="../../assets/test.png" alt="buttonpng" height="40px" width="40px"
+                            (click)="changeValue('przycisk z obrazkiem 1')" />
                     </button>
                 </div>
 
                 <div class="form-row">
                     <label>Grafika jako przycisk</label>
-                    <input type="image" inputmode="true" src="../../assets/test.png" alt="buttonpng"
-                        class="imageButton">
+                    <input type="image" inputmode="true" src="../../assets/test.png" alt="buttonpng" class="imageButton"
+                        (click)="changeValue('przycisk jako obrazek 1')">
                 </div>
 
 
                 <form>
-                    <input type="button" value="Start machine" accesskey="s" (click)="foo('zwykły 2')" />
+                    <input type="button" value="Start machine" accesskey="s" (click)="changeValue('zwykły 2')" />
                 </form>
-                <p>Przycisk: "{{myLabel}}" został kliknięty!</p>
+                <p>Przycisk: "{{label}}" został kliknięty!</p>
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>

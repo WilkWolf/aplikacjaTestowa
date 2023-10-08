@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./duplicated-controls.component.css']
 })
 export class DuplicatedControlsComponent {
+public label: string = "";
+
+
+public changeValue(value:string){
+this.label = value;
+}
 
 }
