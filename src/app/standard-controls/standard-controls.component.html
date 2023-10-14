@@ -39,10 +39,25 @@
         <mat-card>
             <mat-card-title>Checkboxy</mat-card-title>
             <mat-card-content>
-                <input type="checkbox" name="checkbox_on" value="on" checked> checkbox 1
-                <input type="checkbox" name="checkbox_off" value="off"> checkbox 2
-                <input type="checkbox" name="checkbox_on" value="on" checked disabled> checkbox 3
-                <input type="checkbox" name="checkbox_off" value="off" disabled> checkbox 4
+                <div class="form-row">
+                    <label>Checkbox 1</label>
+                    <input type="checkbox" name="checkbox_on" value="on" checked>
+                </div>
+                <div class="form-row">
+                    <label>Checkbox 1</label>
+                    <input type="checkbox" name="checkbox_off" value="off">
+                </div>
+                <div class="form-row">
+                    <label>Wyłączony checkbox 1</label>
+                    <input type="checkbox" name="checkbox_wylaczony_on" value="on" checked disabled>
+                </div>
+                <div class="form-row">
+                    <label>Wyłączony checkbox 2</label>
+                    <input type="checkbox" name="checkbox_wylaczony_off" value="off" disabled>
+                </div>
+
+
+
             </mat-card-content>
             <mat-card-title>Radiobutton</mat-card-title>
             <mat-card-content>
