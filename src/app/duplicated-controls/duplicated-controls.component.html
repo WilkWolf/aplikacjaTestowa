@@ -12,10 +12,6 @@
                     <label>Pole tekstowe</label>
                     <input type="text" name="pole_tekstowe" />
                 </div>
-                <div class="form-row">
-                    <label>Pole tekstowe</label>
-                    <input type="text" name="pole_tekstowe" />
-                </div>
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>
@@ -24,38 +20,29 @@
         <mat-card>
             <mat-card-title>Checkboxy</mat-card-title>
             <mat-card-content>
-                <input type="checkbox" name="checkbox_on" value="on" checked> checkbox
-                <input type="checkbox" name="checkbox_on" value="off"> checkbox
-                <input type="checkbox" name="checkbox_on" value="on" checked disabled> checkbox
-                <input type="checkbox" name="checkbox_on" value="off" disabled> checkbox
-            </mat-card-content>
-            <mat-card-title>Radiobutton</mat-card-title>
-            <mat-card-content>
-                <label>Radiobutton bez wybranej wartości domyślnej</label>
-                <div>
-                    <br>
-                    <input type="radio" name="radio" value="radio"> Radio
-                    <br>
-                    <input type="radio" name="radio" value="radio"> Radio
-                    <br>
+                <div class="form-row">
+                    <input type="checkbox" name="checkbox_on" value="on" checked> checkbox
+                    <input type="checkbox" name="checkbox_on" value="on" checked> checkbox
                 </div>
-                <div>
-                    <fieldset>
-                        <legend>Radiobutton z wybraną wartością domyślną</legend>
-                        <div>
-                            <input type="radio" name="drone" value="wartość" checked />
-                            <label for="wartość">wartość</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="drone" value="wartość" />
-                            <label for="wartość">wartość</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="drone" value="wartość" />
-                            <label for="wartość">wartość</label>
-                        </div>
-                    </fieldset>
+                <mat-divider></mat-divider>
+                <div class="form-row">
+                    <input type="checkbox" name="checkbox_on" value="off"> checkbox
+                    <input type="checkbox" name="checkbox_on" value="off"> checkbox
+
                 </div>
+                <mat-divider></mat-divider>
+                <div class="form-row">
+                    <input type="checkbox" name="checkbox_on" value="on" checked disabled> checkbox
+                    <input type="checkbox" name="checkbox_on" value="on" checked disabled> checkbox
+
+                </div>
+                <mat-divider></mat-divider>
+                <div class="form-row">
+                    <input type="checkbox" name="checkbox_on" value="off" disabled> checkbox
+                    <input type="checkbox" name="checkbox_on" value="off" disabled> checkbox
+
+                </div>
+
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>
@@ -83,15 +70,7 @@
                         <option value="Wartosc3">Wartosc 3</option>
                     </select>
                 </div>
-                <div class="form-row">
-                    <label>Zwykły dropdown</label>
-                    <select name="dropdown">
-                        <option value="Wartosc0" selected>Wartosc 0</option>
-                        <option value="Wartosc1">Wartosc 1</option>
-                        <option value="Wartosc2">Wartosc 2</option>
-                        <option value="Wartosc3">Wartosc 3</option>
-                    </select>
-                </div>
+
             </mat-card-content>
         </mat-card>
 
@@ -112,10 +91,6 @@
                     <button (click)="changeValue('zwykły przycisk 2')">Przycisk</button>
                 </div>
 
-                <div class="form-row">
-                    <button (click)="changeValue('zwykły przycisk 3')">Przycisk</button>
-                </div>
-
                 <p>Przycisk "{{label}}" został wciśnięty</p>
 
                 <div class="form-row">
@@ -134,16 +109,6 @@
                     </button>
                 </div>
 
-
-                <div class="form-row">
-                    <label>Przycisk z grafika</label>
-                    <button>
-                        <img src="assets/test.png" alt="buttonpng" height="40px" width="40px"
-                            (click)="changeValue('przycisk z obrazkiem 3')" />
-                    </button>
-                </div>
-
-
                 <div class="form-row">
                     <label>Grafika jako przycisk</label>
                     <input type="image" inputmode="true" src="assets/test.png" alt="buttonpng" height="40px"
@@ -155,13 +120,6 @@
                     <input type="image" inputmode="true" src="assets/test.png" alt="buttonpng" class="imageButton"
                         (click)="changeValue('przycisk jako obraz 2')">
                 </div>
-
-
-
-                <form>
-                    <input type="button" value="Start machine" accesskey="s" onclick="changeValue()" />
-                </form>
-
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>

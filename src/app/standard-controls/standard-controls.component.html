@@ -29,10 +29,7 @@
                     <textarea rows="5" cols="43" name="niedostepne_wielo-liniowe_pole_tekstowe_z_wartoscia"
                         disabled>text 3</textarea>
                 </div>
-                <!-- 
-                    <div class="form-row"> -->
-                <button>Wyłącz edycje pól tekstowych</button>
-                <!-- </div> -->
+
 
             </mat-card-content>
         </mat-card>
@@ -62,15 +59,15 @@
                     <fieldset>
                         <legend>Radiobutton z wybraną wartością domyślną</legend>
                         <div>
-                            <input type="radio" name="drone" value="wartość 1" checked />
+                            <input type="radio" name="radio2" value="wartość 1" checked />
                             <label for="wartość 1">wartość 1</label>
                         </div>
                         <div>
-                            <input type="radio" name="drone" value="wartość 2" />
+                            <input type="radio" name="radio2" value="wartość 2" />
                             <label for="wartość 2">wartość 2</label>
                         </div>
                         <div>
-                            <input type="radio" name="drone" value="wartość 3" />
+                            <input type="radio" name="radio2" value="wartość 3" />
                             <label for="wartość 3">wartość 3</label>
                         </div>
                     </fieldset>
@@ -78,34 +75,19 @@
                     <fieldset disabled>
                         <legend>Radiobutton z wybraną bez edycji</legend>
                         <div>
-                            <input type="radio" name="drone" value="wartość 1" checked />
+                            <input type="radio" name="radio3" value="wartość 1" checked />
                             <label for="wartość 1">wartość 1</label>
                         </div>
                         <div>
-                            <input type="radio" name="drone" value="wartość 2" />
+                            <input type="radio" name="radio3" value="wartość 2" />
                             <label for="wartość 2">wartość 2</label>
                         </div>
                         <div>
-                            <input type="radio" name="drone" value="wartość 3" />
+                            <input type="radio" name="radio3" value="wartość 3" />
                             <label for="wartość 3">wartość 3</label>
                         </div>
                     </fieldset>
 
-                    <!-- <fieldset>
-                            <legend>Radiobutton z wybraną wartością domyślną</legend>
-                            <div>
-                                <input type="radio" name="drone" value="wartość 1" checked />
-                                <label for="huey">Huey</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="drone" value="wartość 2" />
-                                <label for="dewey">Dewey</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="drone" value="wartość 3" />
-                                <label for="louie">Louie</label>
-                            </div>
-                        </fieldset> -->
 
                 </div>
             </mat-card-content>
@@ -125,22 +107,7 @@
                     </select>
                 </div>
 
-                <div class="form-row">
-                    <label>
-                        Dropdown z dodatkowymi labelkami
-                    </label>
-                    <select name="wybor" multiple size="7">
-                        <optgroup label="Wybór 1">
-                            <option value="wartość 1.1">wartość 1.1</option>
-                            <option value="wartość 1.2">wartość 1.2</option>
-                        </optgroup>
-                        <optgroup label="Wybór 2">
-                            <option value="wartość 2.1">wartość 2.1</option>
-                            <option value="wartość 2.2">wartość 2.2</option>
-                            <option value="wartość 2.3">wartość 2.3</option>
-                        </optgroup>
-                    </select>
-                </div>
+
 
                 <div class="form-row">
                     <label>
@@ -164,24 +131,9 @@
                     </select>
                 </div>
 
-                <div class="form-row">
-                    <label>
-                        Dropdown z dodatkowymi labelkami
-                    </label>
-                    <select name="wybor" multiple size="7" disabled>
-                        <optgroup label="Wybór 1">
-                            <option value="wartość 1.1">wartość 1.1</option>
-                            <option value="wartość 1.2">wartość 1.2</option>
-                        </optgroup>
-                        <optgroup label="Wybór 2">
-                            <option value="wartość 2.1">wartość 2.1</option>
-                            <option value="wartość 2.2">wartość 2.2</option>
-                            <option value="wartość 2.3">wartość 2.3</option>
-                        </optgroup>
-                    </select>
-                </div>
 
-                <div class="form-row">
+
+                <!-- <div class="form-row">
                     <label>
                         Dropdown z jedną wartością odblokowaną
                     </label>
@@ -190,7 +142,7 @@
                         <option value="wartość 2">wartość 2</option>
                         <option value="wartość 3" disabled>wartość 3</option>
                     </select>
-                </div>
+                </div> -->
 
                 <div class="form-row">
                     <label>
@@ -239,10 +191,6 @@
                         (click)="changeValue('przycisk jako obrazek 1')">
                 </div>
 
-
-                <form>
-                    <input type="button" value="Start machine" accesskey="s" (click)="changeValue('zwykły 2')" />
-                </form>
                 <p>Przycisk: "{{label}}" został kliknięty!</p>
             </mat-card-content>
         </mat-card>
