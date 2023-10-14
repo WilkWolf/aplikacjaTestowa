@@ -116,7 +116,7 @@
 
                 <div class="form-row">
                     <label>Zwykły dropdown</label>
-                    <select name="dropdown">
+                    <select name="dropdown_pojedynczy">
                         <option value="Maths" selected>Maths</option>
                         <option value="Physics">Physics</option>
                     </select>
@@ -128,7 +128,7 @@
                     <label>
                         Dropdown z wartościami poza widokiem
                     </label>
-                    <select name="wybor" multiple size="3">
+                    <select name="dropdown_wielokrotny" multiple size="3">
                         <option value="wartość 1">wartość 1</option>
                         <option value="wartość 2">wartość 2</option>
                         <option value="wartość 3">wartość 3</option>
@@ -140,30 +140,18 @@
 
                 <div class="form-row">
                     <label>Zwykły dropdown</label>
-                    <select name="dropdown" disabled>
+                    <select name="dropdown_wylacznoy" disabled>
                         <option value="Maths" selected>Maths</option>
                         <option value="Physics">Physics</option>
                     </select>
                 </div>
 
 
-
-                <!-- <div class="form-row">
-                    <label>
-                        Dropdown z jedną wartością odblokowaną
-                    </label>
-                    <select name="wybor" multiple size="3">
-                        <option value="wartość 1" disabled>wartość 1</option>
-                        <option value="wartość 2">wartość 2</option>
-                        <option value="wartość 3" disabled>wartość 3</option>
-                    </select>
-                </div> -->
-
                 <div class="form-row">
                     <label>
                         Dropdown z jedną wartością odblokowaną poza widokiem
                     </label>
-                    <select name="wybor" multiple size="3">
+                    <select name="dropdnown_tylko_jedna_aktywna" multiple size="3">
                         <option value="wartość 1" disabled>wartość 1</option>
                         <option value="wartość 2" disabled>wartość 2</option>
                         <option value="wartość 3" disabled>wartość 3</option>
@@ -184,17 +172,18 @@
 
                 <div class="form-row">
                     <label>Zwykły przycisk</label>
-                    <button (click)="changeValue('zwykły 1')">Przycisk</button>
+                    <button (click)="changeValue('zwykły 1')" name="przycisk">Przycisk</button>
                 </div>
 
                 <div class="form-row">
                     <label>Przycisk wyłączony</label>
-                    <button disabled (click)="changeValue('zwykły wyłączony przycisk 1')">Przycisk wyłączony</button>
+                    <button disabled (click)="changeValue('zwykły wyłączony przycisk 1')"
+                        name="przycisk_wylaczony">Przycisk wyłączony</button>
                 </div>
 
                 <div class="form-row">
                     <label>Przycisk z grafika</label>
-                    <button>
+                    <button name="przycisk_z_obrazkiem_wewnatrz">
                         <img src="assets/test.png" alt="buttonpng" height="40px" width="40px"
                             (click)="changeValue('przycisk z obrazkiem 1')" />
                     </button>
@@ -203,10 +192,10 @@
                 <div class="form-row">
                     <label>Grafika jako przycisk</label>
                     <input type="image" inputmode="true" src="assets/test.png" alt="buttonpng" class="imageButton"
-                        (click)="changeValue('przycisk jako obrazek 1')">
+                        (click)="changeValue('przycisk jako obrazek 1')" name="przycisk_jako_obrazek">
                 </div>
 
-                <p>Przycisk: "{{label}}" został kliknięty!</p>
+                <p id="tekst">Przycisk: "{{label}}" został kliknięty!</p>
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>
