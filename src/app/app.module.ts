@@ -24,7 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RouterModule.forRoot([
       { path: 'standardControls', component: StandardControlsComponent },
       { path: 'duplicatedControls', component: DuplicatedControlsComponent },
-      { path: 'controlsWIthDynamicID', component: VariousControlsIdentificationComponent },
+      { path: 'variousFormOfIdentification', component: VariousControlsIdentificationComponent },
       { path: '', redirectTo: 'standardControls', pathMatch: 'full' },
       { path: '**', redirectTo: 'standardControls', pathMatch: 'full' },
     ]),
