@@ -1,4 +1,4 @@
-<h1>Duplikaty kontrolek</h1>
+<h1>Duplikaty</h1>
 <mat-grid-list cols="2">
     <mat-grid-tile>
         <mat-card>
@@ -28,21 +28,17 @@
                 <div class="form-row">
                     <input type="checkbox" name="checkbox_on" value="off"> checkbox
                     <input type="checkbox" name="checkbox_on" value="off"> checkbox
-
                 </div>
                 <mat-divider></mat-divider>
                 <div class="form-row">
                     <input type="checkbox" name="checkbox_on" value="on" checked disabled> checkbox
                     <input type="checkbox" name="checkbox_on" value="on" checked disabled> checkbox
-
                 </div>
                 <mat-divider></mat-divider>
                 <div class="form-row">
                     <input type="checkbox" name="checkbox_on" value="off" disabled> checkbox
                     <input type="checkbox" name="checkbox_on" value="off" disabled> checkbox
-
                 </div>
-
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>
@@ -51,7 +47,6 @@
         <mat-card>
             <mat-card-title>Dropdown</mat-card-title>
             <mat-card-content>
-
                 <div class="form-row">
                     <label>Zwykły dropdown</label>
                     <select name="dropdown">
@@ -70,29 +65,21 @@
                         <option value="Wartosc 3">Wartosc 3</option>
                     </select>
                 </div>
-
             </mat-card-content>
         </mat-card>
-
-
-
     </mat-grid-tile>
 
     <mat-grid-tile>
         <mat-card>
             <mat-card-title>Przyciski</mat-card-title>
             <mat-card-content>
-
                 <div class="form-row">
                     <button (click)="changeValue('zwykły przycisk 1')">Przycisk</button>
                 </div>
-
                 <div class="form-row">
                     <button (click)="changeValue('zwykły przycisk 2')">Przycisk</button>
                 </div>
-
                 <p>Przycisk "{{label}}" został wciśnięty</p>
-
                 <div class="form-row">
                     <label>Przycisk z grafika</label>
                     <button>
@@ -100,7 +87,6 @@
                             (click)="changeValue('przycisk z obrazkiem 1')" />
                     </button>
                 </div>
-
                 <div class="form-row">
                     <label>Przycisk z grafika</label>
                     <button>
@@ -108,13 +94,11 @@
                             (click)="changeValue('przycisk z obrazkiem 2')" />
                     </button>
                 </div>
-
                 <div class="form-row">
                     <label>Grafika jako przycisk</label>
                     <input type="image" inputmode="true" src="assets/test.png" alt="buttonpng" height="40px"
                         width="40px" class="imageButton" (click)="changeValue('przycisk jako obraz 1')">
                 </div>
-
                 <div class="form-row">
                     <label>Grafika jako przycisk</label>
                     <input type="image" inputmode="true" src="assets/test.png" alt="buttonpng" class="imageButton"

@@ -1,4 +1,4 @@
-<h1>Kontrolki bez żadnej dodatkowej identyfikacji</h1>
+<h1>Podstawowe kontrolki</h1>
 <mat-grid-list cols="2">
     <mat-grid-tile>
         <mat-card>
@@ -29,8 +29,6 @@
                     <textarea rows="5" cols="43" name="niedostepne_wielo-liniowe_pole_tekstowe_z_wartoscia"
                         disabled>text 3</textarea>
                 </div>
-
-
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>
@@ -56,13 +54,10 @@
                     <input type="checkbox" name="checkbox_wylaczony_off" value="off" disabled>
                 </div>
 
-
-
             </mat-card-content>
             <mat-card-title>Radiobutton</mat-card-title>
             <mat-card-content>
                 <label>Radiobutton bez wybranej wartości domyślnej</label>
-
                 <div>
                     <br>
                     <input type="radio" name="radio" value="radio1"> Radio 1
@@ -102,8 +97,6 @@
                             <label for="wartość 3">wartość 3</label>
                         </div>
                     </fieldset>
-
-
                 </div>
             </mat-card-content>
         </mat-card>
@@ -113,7 +106,6 @@
         <mat-card>
             <mat-card-title>Dropdown</mat-card-title>
             <mat-card-content>
-
                 <div class="form-row">
                     <label>Zwykły dropdown</label>
                     <select name="dropdown_pojedynczy">
@@ -121,9 +113,6 @@
                         <option value="Physics">Physics</option>
                     </select>
                 </div>
-
-
-
                 <div class="form-row">
                     <label>
                         Dropdown z wartościami poza widokiem
@@ -136,8 +125,6 @@
                         <option value="wartość 5">wartość 5</option>
                     </select>
                 </div>
-
-
                 <div class="form-row">
                     <label>Zwykły dropdown</label>
                     <select name="dropdown_wylacznoy" disabled>
@@ -145,8 +132,6 @@
                         <option value="Physics">Physics</option>
                     </select>
                 </div>
-
-
                 <div class="form-row">
                     <label>
                         Dropdown z jedną wartością odblokowaną poza widokiem
@@ -160,27 +145,21 @@
                 </div>
             </mat-card-content>
         </mat-card>
-
-
-
     </mat-grid-tile>
 
     <mat-grid-tile>
         <mat-card>
             <mat-card-title>Przyciski</mat-card-title>
             <mat-card-content>
-
                 <div class="form-row">
                     <label>Zwykły przycisk</label>
                     <button (click)="changeValue('zwykły 1')" name="przycisk">Przycisk</button>
                 </div>
-
                 <div class="form-row">
                     <label>Przycisk wyłączony</label>
                     <button disabled (click)="changeValue('zwykły wyłączony przycisk 1')"
                         name="przycisk_wylaczony">Przycisk wyłączony</button>
                 </div>
-
                 <div class="form-row">
                     <label>Przycisk z grafika</label>
                     <button name="przycisk_z_obrazkiem_wewnatrz">
@@ -188,13 +167,11 @@
                             (click)="changeValue('przycisk z obrazkiem 1')" />
                     </button>
                 </div>
-
                 <div class="form-row">
                     <label>Grafika jako przycisk</label>
                     <input type="image" inputmode="true" src="assets/test.png" alt="buttonpng" class="imageButton"
                         (click)="changeValue('przycisk jako obrazek 1')" name="przycisk_jako_obrazek">
                 </div>
-
                 <p id="tekst">Przycisk: "{{label}}" został kliknięty!</p>
             </mat-card-content>
         </mat-card>

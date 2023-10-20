@@ -2,6 +2,7 @@
 
 mat-card{
     width: 75%;
+    height: 700px;
     /* height: fit-content; */
 }
 
@@ -19,13 +20,6 @@ mat-card{
   }
 
 
-mat-grid-list{
-    padding-bottom: 0% !important;
-}
-
-mat-grid-tile{
-    padding-top: 40% !important;
-}
 
 .imageButton{
 height: 100px;
